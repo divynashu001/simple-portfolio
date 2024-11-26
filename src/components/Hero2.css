@@ -1,0 +1,47 @@
+.hero-img2 {
+  width: 100%;
+  height: 70vh; /* Or consider using min-height for more flexibility */
+  position: relative;
+  overflow: hidden; /* Ensure that any overflow is hidden */
+}
+
+.hero-img2::before {
+  content: "";
+  background: url(https://images.unsplash.com/photo-1669023414162-8b0573b9c6b2?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover; /* This ensures the image covers the section */
+  background-position: center top; /* Center the image */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.heading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img2 h1 {
+  font-size: 2.4rem;
+}
+
+.hero-img2 p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .hero-img2 h1 {
+    font-size: 2rem;
+  }
+  .hero-img2{
+    height: 60vh;
+  }
+}

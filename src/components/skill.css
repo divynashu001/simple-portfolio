@@ -1,0 +1,53 @@
+.skills {
+    text-align: center;
+    padding: 20px;
+}
+
+.skill-heading {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.skill-card {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 620px) {
+    .skill-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.skill-item img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.skill-item img:hover {
+    transform: scale(1.1);
+}
+
+.skill-item p {
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #333;
+}
