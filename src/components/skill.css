@@ -17,9 +17,9 @@
   margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 740px) {
     .skill-card {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
