@@ -2,7 +2,7 @@ import HTML from "../assets/html.png";
 import CSS from "../assets/css.jpg";
 import JS from "../assets/js.png";
 import REACT from "../assets/react.png";
-import "./Skill.css"
+import "./skill.css"
 
 export default function Skill() {
     return (
